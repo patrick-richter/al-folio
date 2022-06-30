@@ -2,11 +2,10 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
-
+subtitle: MSc Data Science Student at the <a href='https://www.bath.ac.uk'>University of Bath</a>
 profile:
   align: right
-  image: prof_pic.jpg
+  image: prof_pic.HEIC
   image_cicular: false # crops the image to make it circular
   address: >
     <p>555 your office number</p>
