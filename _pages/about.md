@@ -7,7 +7,13 @@ profile:
   align: right
   image: prof_pic.HEIC
   image_cicular: false # crops the image to make it circular
-  address: 
+  address: >
+<<<<<<< HEAD
+=======
+    <p>555 your office number</p>
+    <p>123 your address street</p>
+    <p>Your City, State 12345</p>
+>>>>>>> parent of 20fcc75 (Changed name and profile picture)
 
 news: false  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
