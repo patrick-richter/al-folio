@@ -11,7 +11,7 @@ The data used in this project is a large dataset of reviews of Ford motor vehicl
 
 "In 1992, we bought a new Taurus and we really loved it. So in 1999, we decided to try a new Taurus. I did not care for the style of the newer version but bought it anyway. I do not like the new car half as much as I liked our other one."
 
-## Prerequirements
+### Prerequirements
 
 The project is written in Python and before starting, make sure to install and import the following libraries.
 
