@@ -1,11 +1,15 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
+title: Review Sentiment Classification with CNN and Word Embedding
+description: 
 img: assets/img/12.jpg
 importance: 1
-category: work
+category: Deep Learning
 ---
+
+The data used here is a large dataset of reviews for Ford motor vehicles. Each of the 1382 reviews are labelled with a positive or negative sentiment. The goal of this project is to train a Convolutional Neural Network (CNN) with Word Embedding that can correctly predict the sentiment of a review. The dataset can be downloaded by clicking this (Link)[https://patrick-richter.github.io/website/assets/csv/car_reviews.csv] and subsequently saving the csv file.
+
+
 
 # Title
 
