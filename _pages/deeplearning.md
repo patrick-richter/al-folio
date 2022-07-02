@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Classic ML
-permalink: /projects/
+title: Deep Learning
+permalink: /deeplearning/
 description: A growing collection of your cool projects.
 nav: true
-nav_order: 1
-display_categories: [Classic]
+nav_order: 2
+display_categories: [Computer Vision, Natural Language Processing]
 horizontal: false
 ---
 
