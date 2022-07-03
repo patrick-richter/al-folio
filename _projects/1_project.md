@@ -10,7 +10,10 @@ category: Deep Learning
 The data used in this project is a large dataset of reviews of Ford motor vehicles. Each of the 1,382 reviews are labelled with a positive or negative sentiment. The goal of this project is to train a Convolutional Neural Network (CNN) with Word Embedding that can correctly predict the sentiment of a review. The dataset can be downloaded by clicking this [Link](https://patrick-richter.github.io/website/assets/csv/car_reviews.csv) and subsequently saving the csv file. To give you brief idea of how these reviews look like, here is an example of a negative sentiment review:
 
 ```
-"In 1992, we bought a new Taurus and we really loved it. So in 1999, we decided to try a new Taurus. I did not care for the style of the newer version but bought it anyway. I do not like the new car half as much as I liked our other one."
+"In 1992, we bought a new Taurus and we really loved it. 
+So in 1999, we decided to try a new Taurus. 
+I did not care for the style of the newer version but bought it anyway. 
+I do not like the new car half as much as I liked our other one."
 ```
 
 ### Prerequirements
@@ -18,7 +21,7 @@ The data used in this project is a large dataset of reviews of Ford motor vehicl
 The project is written in Python and before starting, make sure to install and import the following libraries.
 
 {% raw %}
-```python:
+```html
 import numpy as np
 import pandas as pd
 import tensorflow as tf
