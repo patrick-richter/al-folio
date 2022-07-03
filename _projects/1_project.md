@@ -171,12 +171,12 @@ The Word Embedding CNN achieves a 99.0 % accuracy on training data and a 83.03 %
 
 <script src="https://gist.github.com/patrick-richter/493b94d11c303d0f624cf7cc280c22b1.js"></script>
 
-```
-top left = true negatives, top right = false positives, bottom left = false negatives and bottom right = true positives
-
+</div>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/13.jpg" title="Confusion matrix" %}
+        {% include figure.html path="assets/img/13.jpg" title="Confusion matrix" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-```
+<div class="caption">
+    Confusion matrix (top left = true negatives, top right = false positives, bottom left = false negatives, and bottom right = true positives)
+</div>
