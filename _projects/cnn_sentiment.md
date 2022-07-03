@@ -26,7 +26,7 @@ I do not like the new car half as much as I liked our other one."
 <br/><br/>
 ### **Prerequirements**
 
-The project is written in Python and before starting, make sure to install and import the following libraries.
+The project is written in Python and, before starting, make sure to install and import the following libraries.
 
 <script src="https://gist.github.com/patrick-richter/f5935b8651b1fce5a54aa279fe21ff88.js"></script>
 
