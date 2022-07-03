@@ -24,7 +24,7 @@ I do not like the new car half as much as I liked our other one."
 ```
 
 <br/><br/>
-### Prerequirements
+### **Prerequirements**
 
 The project is written in Python and before starting, make sure to install and import the following libraries.
 
@@ -32,7 +32,7 @@ The project is written in Python and before starting, make sure to install and i
 
 
 <br/><br/>
-### Data Preprocessing
+### **Data Preprocessing**
 
 To be able to preprocess the data, the csv file is first of all read with pandas and transformed into a numpy array. Then, all negative reviews receive the label 0, whereas all positive reviews receive 1 as their label.
 
@@ -106,7 +106,7 @@ Furthermore, the maximum number of words of a sequence is limited to prevent the
 ```
 <br/><br/>
 
-### CNN Model with Word Embedding
+### **CNN Model with Word Embedding**
 
 A Word Embedding is a learned representation for text analysis – typically in the form of a vector – where words that are closer in the vector space are expected to be close in meaning. The representation of words is learned based on the usage of words, allowing words that are used in similar ways to result in having similar representations, naturally capturing their meaning.
 
@@ -139,7 +139,7 @@ _________________________________________________________________
 ```
 
 <br/><br/>
-### Model Training
+### **Model Training**
 
 Now, the model only needs to be trained with `model.fit()`. Subsequently, the model can predict the sentiments for both the training and the test data.
 
