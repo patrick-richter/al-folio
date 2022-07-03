@@ -141,7 +141,9 @@ _________________________________________________________________
 <br/><br/>
 ### Model Training
 
+Now, the model only needs to be trained with `model.fit()`. Subsequently, the model can predict the sentiments for both the training and the test data.
 
+<script src="https://gist.github.com/patrick-richter/24f55c357f2e006062ae15212612db94.js"></script>
 
 ```
 Epoch 1/4
