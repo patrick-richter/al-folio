@@ -173,7 +173,7 @@ The confusion matrix demonstrates that the classification is well balanced (simi
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/13.jpg" title="Confusion matrix" class="img-fluid rounded z-depth-1" align="center"%}
+        {% include figure.html path="assets/img/13.jpg" title="Confusion matrix" class="img-fluid rounded z-depth-1"%}
     </div>
 </div>
 <div class="caption">
