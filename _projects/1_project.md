@@ -7,6 +7,14 @@ importance: 1
 category: Deep Learning
 ---
 
+</div>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/12.jpg" title="Ford image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+
 The data used in this project is a large dataset of Ford motor vehicle reviews. Each of the 1,382 reviews is labelled with a positive or negative sentiment. The goal of this project is to train a Convolutional Neural Network (CNN) with Word Embedding that can correctly predict the sentiment of a review. You can download the dataset by clicking this [Link](https://patrick-richter.github.io/website/assets/csv/car_reviews.csv) and subsequently saving the csv file. To give you brief idea of how these reviews look like, here is an example of a negative sentiment review:
 
 ```
