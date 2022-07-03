@@ -40,6 +40,12 @@ The next step is to remove all stop words (words such as "the", "I", or "he" tha
 
 <script src="https://gist.github.com/patrick-richter/060239691b03d428c3c7cba00ffd3333.js"></script>
 
+Following that, the remaining words are stemmed, i.e., they are reduced to their base word or stem so that similar words are being represented by the same stem word. For example, ‘leaking’ and ‘leaks’ would both be converted to ‘leak’ and would therefore be seen as the same word in the upcoming steps. Due to better performance, the Porter Stemmer, which is slightly less aggressive than the alternative Snowball Stemmer, was implemented.
+
+<script src="https://gist.github.com/patrick-richter/289a51d0b99af9cff7d46ca6717cfb5e.js"></script>
+
+# SAFsdfsdfsd
+
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.
 Make your photos 1/3, 2/3, or full width.
