@@ -23,6 +23,7 @@ I did not care for the style of the newer version but bought it anyway.
 I do not like the new car half as much as I liked our other one."
 ```
 
+<br/><br/>
 ### Prerequirements
 
 The project is written in Python and before starting, make sure to install and import the following libraries.
@@ -30,6 +31,7 @@ The project is written in Python and before starting, make sure to install and i
 <script src="https://gist.github.com/patrick-richter/f5935b8651b1fce5a54aa279fe21ff88.js"></script>
 
 
+<br/><br/>
 ### Data Preprocessing
 
 To be able to preprocess the data, the csv file is first of all read with pandas and transformed into a numpy array. Then, all negative reviews receive the label 0, whereas all positive reviews receive 1 as their label.
@@ -53,6 +55,7 @@ One common approach to limit the vocabulary is by assuming that the words that o
 
 <script src="https://gist.github.com/patrick-richter/c833741c218588ff1c5f2f0fcddbaebc.js"></script>
 
+<br/><br/>
 # SAFsdfsdfsd
 
 Every project has a beautiful feature showcase page.
