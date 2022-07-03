@@ -139,6 +139,22 @@ _________________________________________________________________
 ```
 
 <br/><br/>
+### Model Training
+
+
+
+```
+Epoch 1/4
+35/35 - 1s - loss: 0.6933 - accuracy: 0.5176 - val_loss: 0.6896 - val_accuracy: 0.5668
+Epoch 2/4
+35/35 - 0s - loss: 0.6468 - accuracy: 0.6615 - val_loss: 0.6058 - val_accuracy: 0.7292
+Epoch 3/4
+35/35 - 0s - loss: 0.3906 - accuracy: 0.8588 - val_loss: 0.4516 - val_accuracy: 0.8303
+Epoch 4/4
+35/35 - 1s - loss: 0.1246 - accuracy: 0.9674 - val_loss: 0.4976 - val_accuracy: 0.8303
+```
+
+<br/><br/>
 # SAFsdfsdfsd
 
 Every project has a beautiful feature showcase page.
