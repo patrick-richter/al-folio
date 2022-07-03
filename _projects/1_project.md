@@ -44,9 +44,14 @@ Following that, the remaining words are stemmed, i.e., they are reduced to their
 
 <script src="https://gist.github.com/patrick-richter/289a51d0b99af9cff7d46ca6717cfb5e.js"></script>
 
-To be able to later assess the model with no bias, it is paramount to split the dataset into a training dataset that is used for training, and a test dataset that serves for unbiased performance assessment. Here 20% of the dataset is used for testing. Also note that it is important to set a random state, making sure that we always have the same split, even when you run it multiple times.
+To be able to later assess the model with no bias, it is paramount to split the dataset into a training dataset that is used for training, and a test dataset that serves for unbiased performance assessment. Here, 20% of the dataset is used for testing. Also note that it is important to set a random state, making sure that we always have the same split, even when you run it multiple times.
 
 <script src="https://gist.github.com/patrick-richter/c8078f707316a5310f9fc3d27fd5434f.js"></script>
+
+For the Word Embedding approach, it is necessary to have a vocabulary of all words that occur in the training dataset. However, it has been shown that generally Word Embeddings where the vocabulary has been reduced to only the most predictive words, yield better results and train significantly faster due to the reduced data.
+One common approach to limit the vocabulary is by assuming that the words that occur very rarely are less predictive than the words with higher occurrence. Here, it is decided (through trial and error) that only words that occur 5 times or more often are included into the vocabulary. This reduces the vocabulary from 9,033 to 3,424 different words.
+
+<script src="https://gist.github.com/patrick-richter/c833741c218588ff1c5f2f0fcddbaebc.js"></script>
 
 # SAFsdfsdfsd
 
