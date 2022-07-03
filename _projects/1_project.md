@@ -20,47 +20,10 @@ I do not like the new car half as much as I liked our other one."
 
 The project is written in Python and before starting, make sure to install and import the following libraries.
 
-{% raw %}
-```html
-import numpy as np
-import pandas as pd
-import tensorflow as tf
-import nltk
-import matplotlib.pyplot as plt
-from collections import Counter
-from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
-from tensorflow.keras import backend as K
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.preprocessing import text
-from tensorflow.keras.layers import Embedding, Conv1D, MaxPooling1D, Flatten, Dense
-from tensorflow.keras.preprocessing.sequence import pad_sequences
-```
-{% endraw %}
-
 <script src="https://gist.github.com/patrick-richter/f5935b8651b1fce5a54aa279fe21ff88.js"></script>
 
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
 
-# Title
 
-## Hallo
-
-### Hallo
-
-#### Hallo
 
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.
@@ -133,3 +96,11 @@ Here's the code for the last row of images above:
 </div>
 ```
 {% endraw %}
+
+# Title
+
+## Hallo
+
+### Hallo
+
+#### Hallo
