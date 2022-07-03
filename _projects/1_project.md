@@ -106,6 +106,12 @@ Furthermore, the maximum number of words of a sequence is limited to prevent the
 ```
 <br/><br/>
 
+### CNN Model with Word Embedding
+
+A Word Embedding is a learned representation for text analysis – typically in the form of a vector – where words that are closer in the vector space are expected to be close in meaning. The representation of words is learned based on the usage of words. This allows words that are used in similar ways to result in having similar representations, naturally capturing their meaning.
+
+There are several methods how you can implement Word Embedding. For this task, the word embedding is implemented into a Neural Network in form of a layer. In the training process, the embedding layer's weights are updated to best represent each of the words as a vector. This approach will learn an embedding both targeted to the specific text data (in that case, car reviews) and to the classification task.
+
 <br/><br/>
 # SAFsdfsdfsd
 
