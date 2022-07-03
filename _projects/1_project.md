@@ -23,7 +23,15 @@ The project is written in Python and before starting, make sure to install and i
 <script src="https://gist.github.com/patrick-richter/f5935b8651b1fce5a54aa279fe21ff88.js"></script>
 
 
+### Data Preprocessing
 
+To be able to preprocess the data, the csv file is first of all read with pandas and transformed into a numpy array. Then, all negative reviews receive the label 0, whereas all positive reviews receive 1 as their label.
+
+<script src="https://gist.github.com/patrick-richter/b64f6ea0eeb602649fa1253937fcaedd.js"></script>
+
+The next step is to remove all stop words (words such as "the", "I", or "he" that occur so frequently that they are deemed irrelevant for the classification), digits, and punctuation. By using a pre-existing stop word list from the nltk library, the undesirable words can be easily discarded.
+
+<script src="https://gist.github.com/patrick-richter/060239691b03d428c3c7cba00ffd3333.js"></script>
 
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.
