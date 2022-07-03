@@ -159,7 +159,7 @@ Epoch 4/4
 <br/><br/>
 ### **Results**
 
-The model achieves an 83.03 % on the test data, which is quite an impressive result, considering the relatively small dataset. With even more data, perhaps, the Word Embedding could have even been more effective.
+The model achieves an 83.03 % accuracy on the test data, which is quite an impressive result, considering the relatively small dataset. With even more data, perhaps, the Word Embedding could have even been more effective.
 
 <script src="https://gist.github.com/patrick-richter/f29f9144a52f1e054c8c3f71b9e8b325.js"></script>
 
