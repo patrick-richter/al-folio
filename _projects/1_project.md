@@ -18,7 +18,7 @@ The data used in this project is a large dataset of reviews of Ford motor vehicl
 The project is written in Python and before starting, make sure to install and import the following libraries.
 
 {% raw %}
-```Python
+```python:
 import numpy as np
 import pandas as pd
 import tensorflow as tf
