@@ -161,8 +161,22 @@ Epoch 4/4
 
 The model achieves an 83.03 % on the test data, which is quite an impressive result, considering the relatively small dataset. With even more data, perhaps, the Word Embedding could have even been more effective.
 
+The confusion matrix demonstrates that the classification is well balanced (similar false positive and false negative rate).
+
 <script src="https://gist.github.com/patrick-richter/f29f9144a52f1e054c8c3f71b9e8b325.js"></script>
 
 ```
 The Word Embedding CNN achieves a 99.0 % accuracy on training data and a 83.03 % accuracy on test data.
+```
+
+<script src="https://gist.github.com/patrick-richter/493b94d11c303d0f624cf7cc280c22b1.js"></script>
+
+```
+top left = true negatives, top right = false positives, bottom left = false negatives and bottom right = true positives
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/13.jpg" title="Confusion matrix" %}
+    </div>
+</div>
 ```
