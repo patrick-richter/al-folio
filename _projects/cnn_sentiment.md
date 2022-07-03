@@ -1,6 +1,6 @@
 ---
 layout: page
-title: CNN Text Sentiment Classification Using Word Embedding
+title: 'CNN: Text Sentiment Classification Using Word Embedding'
 description: 
 img: assets/img/12.jpg
 importance: 1
