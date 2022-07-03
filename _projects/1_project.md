@@ -112,6 +112,32 @@ A Word Embedding is a learned representation for text analysis – typically in 
 
 There are several methods how you can implement Word Embedding. For this task, the word embedding is implemented into a Neural Network in form of a layer. In the training process, the embedding layer's weights are updated to best represent each of the words as a vector. This approach will learn an embedding both targeted to the specific text data (in that case, car reviews) and to the classification task.
 
+The Neural Network is built by using keras. After the embedding and convolutional layer, the model also consists of two fully connected layers for the classification.
+
+<script src="https://gist.github.com/patrick-richter/485975ee6d7114e7a29f29f932b04a01.js"></script>
+
+```
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+embedding_12 (Embedding)     (None, 550, 120)          411000    
+_________________________________________________________________
+conv1d_12 (Conv1D)           (None, 543, 32)           30752     
+_________________________________________________________________
+max_pooling1d_12 (MaxPooling (None, 271, 32)           0         
+_________________________________________________________________
+flatten_12 (Flatten)         (None, 8672)              0         
+_________________________________________________________________
+dense_24 (Dense)             (None, 10)                86730     
+_________________________________________________________________
+dense_25 (Dense)             (None, 1)                 11        
+=================================================================
+Total params: 528,493
+Trainable params: 528,493
+Non-trainable params: 0
+_________________________________________________________________
+```
+
 <br/><br/>
 # SAFsdfsdfsd
 
