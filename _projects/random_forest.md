@@ -26,3 +26,8 @@ The project is written in Python and, before starting, make sure to install and 
 <br/><br/>
 ### **Data Preprocessing**
 
+<br/><br/>
+### **Random Forest**
+
+<br/><br/>
+### **Data Preprocessing**
