@@ -23,15 +23,12 @@ So in 1999, we decided to try a new Taurus.
 I did not care for the style of the newer version but bought it anyway. 
 I do not like the new car half as much as I liked our other one."
 ```
-
 <br/><br/>
 ### **Prerequirements**
 
 The project is written in Python and, before starting, make sure to install and import the following libraries.
 
 <script src="https://gist.github.com/patrick-richter/f5935b8651b1fce5a54aa279fe21ff88.js"></script>
-
-
 <br/><br/>
 ### **Data Preprocessing**
 
@@ -106,7 +103,6 @@ Furthermore, the maximum number of words of a sequence is limited to prevent the
     0    0    0    0]
 ```
 <br/><br/>
-
 ### **CNN Model with Word Embedding**
 
 A Word Embedding is a learned representation for text analysis – typically in the form of a vector – where words that are closer in the vector space are expected to be close in meaning. The representation of words is learned based on the usage of words, allowing words that are used in similar ways to result in having similar representations, naturally capturing their meaning.
@@ -138,7 +134,6 @@ Trainable params: 528,493
 Non-trainable params: 0
 _________________________________________________________________
 ```
-
 <br/><br/>
 ### **Model Training**
 
@@ -156,7 +151,6 @@ Epoch 3/4
 Epoch 4/4
 35/35 - 1s - loss: 0.1246 - accuracy: 0.9674 - val_loss: 0.4976 - val_accuracy: 0.8303
 ```
-
 <br/><br/>
 ### **Results**
 
