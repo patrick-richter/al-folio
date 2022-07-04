@@ -84,8 +84,6 @@ The Random Forest classifier has two really important hyperparameters. `max_dept
 
 <script src="https://gist.github.com/patrick-richter/cb7e3035227c9d02e9fc35e2afd8214f.js"></script>
 
-<br/><br/>
-
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/17.jpg" title="Number of trees" class="img-fluid rounded z-depth-1" %}
