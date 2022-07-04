@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Random Forest: News Article Classification
+title: 'Random Forest: News Article Classification'
 description: 
 img: assets/img/3.jpg
 importance: 2
