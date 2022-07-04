@@ -48,12 +48,46 @@ Following that, the remaining words are stemmed, i.e., they are reduced to their
 
 Finally, to make our data processable for the Random Forest classifier, we need to vectorise the text. There are several ways how to represent text in a vector. One of the most commonly used approaches that is also used here, is to count the occurrence of words. This count vectoriser approach returns a vector that counts how often each of the words in the vocabulary (all different words in the training data) occur for each sample.
 
-The problem we are facing here is that there are just too many different words in the training data (>20,000) which would make it incredibly computational expensive. Therefore, the `max_features` parameter is here limited to 4,000, i.e., only the 4,000 most frequently used words are considered.
+The problem we are facing here is that there are just too many different words in the training data (>20,000) which would make it incredibly computational expensive. Therefore, the `max_features` parameter is here limited to 4,000, i.e., only the 4,000 most frequently occurring words are considered.
 
 <script src="https://gist.github.com/patrick-richter/cfecf2c99c43520dff84d45b794b2982.js"></script>
 <br/><br/>
-### **Random Forest**
+### **Random Forest Classifier**
+
+Before we go into Random Forests themselves, it is important to understand how decision trees work. As you can see in the basic example bellow, decision trees always split in a way that the resulting subsamples are as dissimilar as possible. In other words, the tree decides to split the feature where it can gain the most information.
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/14.jpg" title="Decision tree" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+</div>
+<div class="caption">
+    Simple decsion tree (source: [Towards Data Science](https://towardsdatascience.com/understanding-random-forest-58381e0602d2))
+</div>
+
+A Random Forest is an ensemble of multiple decision trees, combining their predictions the wisdom of many to provide a more robust prediction (see figure below). To ensure that the trees are as uncorrelated as possible, Random Forest modifies the decision trees in two ways to add more randomness. **Bagging**, the first method, refers to the process that each tree is trained with a random subset of samples, instead of the whole dataset. **Feature Randomness** introduces randomness by only letting the decision trees pick from a subset of features at each point. Due to the highly uncorrelated trees and the prediction by committee, Random Forests are far more accurate than decision trees alone in their prediction.
+
+
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/15.jpg" title="Random Forest" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+</div>
+<div class="caption">
+    Random Forest (source: [Towards Data Science](https://towardsdatascience.com/understanding-random-forest-58381e0602d2))
+</div>
+
+<br/><br/>
+### **Implementation**
+
+For this project, we will not implement the Random Forest classifier from scratch, but instead use the already implemented function from `scikit-learn`. If you are interested in checking out how to code the algorithm from scratch, check [here](https://tonyalgo.com/machinelearning/randomforest).
+
+The Random Forest classifier has two really important hyperparameters. `max_depth` determines how many nodes each decision tree can maximally have. From playing around with the hyperparameter, I achieved the best results with 2,000 (half of the vocabulary). The second import hyperparameter is `n_estimators`, the number of decision trees in the Random Forest. Generally, the more trees you have, the better the results will be. However, as you can see in the figure bellow, the test accuracy only improves slightly after 50 trees. In my code, I choose quite a high number of trees (xxxxxxx), but this will also take you more than 30 minutes to train.
 
 
 <br/><br/>
-### **Data Preprocessing**
+### **Results**
+
+
+
