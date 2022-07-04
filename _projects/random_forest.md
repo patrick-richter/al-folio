@@ -75,7 +75,6 @@ A Random Forest is an ensemble of multiple decision trees, combining their predi
 <div class="caption">
     Random Forest (source: <link rel="Towards Data Science" href="https://towardsdatascience.com/understanding-random-forest-58381e0602d2">)
 </div>
-
 <br/><br/>
 ### **Implementation**
 
@@ -92,7 +91,6 @@ The Random Forest classifier has two really important hyperparameters. `max_dept
         {% include figure.html path="assets/img/17.jpg" title="Number of trees" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-
 <br/><br/>
 ### **Results**
 
@@ -103,5 +101,6 @@ The Random Forest classifier has two really important hyperparameters. `max_dept
         {% include figure.html path="assets/img/16.jpg" title="Confustion matrix" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-
-
+<div class="caption">
+    Confusion matrix
+</div>
