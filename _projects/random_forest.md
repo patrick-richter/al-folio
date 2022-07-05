@@ -106,3 +106,8 @@ The Random Forest classifier has two really important hyperparameters. `max_dept
 
 ![](assets/img/16.jpg)
 *Confusion matrix*
+
+<p>
+    <img src="assets/img/16.jpg" alt>
+    <em>Confusion matrix</em>
+</p>
