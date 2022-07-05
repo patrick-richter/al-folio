@@ -96,7 +96,7 @@ The Random Forest classifier has two really important hyperparameters. `max_dept
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/16.jpg" title="Confustion matrix" class="img-fluid rounded z-depth-1" style="float: right; height: 10%; width: 10%"%}
+        {% include figure.html path="assets/img/16.jpg" title="Confustion matrix" class="img-fluid" style="float: right; height: 10%; width: 10%"%}
     </div>
 </div>
 <div class="caption">
