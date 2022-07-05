@@ -111,3 +111,8 @@ The Random Forest classifier has two really important hyperparameters. `max_dept
     <img src="assets/img/16.jpg" alt>
     <em>Confusion matrix</em>
 </p>
+
+<figure>
+  <img src="assets/img/16.jpg" alt="Trulli" style="width:100%">
+  <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+</figure>
