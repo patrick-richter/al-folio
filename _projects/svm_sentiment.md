@@ -47,3 +47,23 @@ Finally, to make our data processable for the SVM classifier, we need to vectori
 <script src="https://gist.github.com/patrick-richter/dcaf4ff2ecfa3170aa9dfc641cb8d116.js"></script>
 <br/><br/>
 ### **SVM Classifier**
+
+<script src="https://gist.github.com/patrick-richter/5f9538480c04afb5d0582b56da9c9fde.js"></script>
+
+```
+{'C': 10, 'gamma': 0.1, 'kernel': 'sigmoid'} 0.844
+```
+<br/><br/>
+### **Results**
+
+
+<script src="https://gist.github.com/patrick-richter/6a1f6d10e2864f248bf3e898fd23c035.js"></script>
+
+```
+Train accuracy: 95.82 %
+Test accuracy: 86.07 %
+```
+
+
+<script src="https://gist.github.com/patrick-richter/3363b11ec2aad3ae4907e233e5b5d610.js"></script>
+
