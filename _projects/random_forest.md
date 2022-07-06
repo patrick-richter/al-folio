@@ -58,22 +58,22 @@ Before we go into Random Forests themselves, it is important to understand how d
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/14.jpg" title="Decision tree" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/14.jpg" title="Decision tree" class="img-fluid" %}
     </div>
 </div>
 <div class="caption">
-    Simple decsion tree (source: <link rel="Towards Data Science" href="https://towardsdatascience.com/understanding-random-forest-58381e0602d2">)
+    Simple decsion tree (source: <a href="https://towardsdatascience.com/understanding-random-forest-58381e0602d2">Towards Data Science</a>)
 </div>
 
 A Random Forest is an ensemble of multiple decision trees, combining their predictions the wisdom of many to provide a more robust prediction (see figure below). To ensure that the trees are as uncorrelated as possible, Random Forest modifies the decision trees in two ways to add more randomness. **Bagging**, the first method, refers to the process that each tree is trained with a random subset of samples, instead of the whole dataset. **Feature Randomness** introduces randomness by only letting the decision trees pick from a subset of features at each point. Due to the highly uncorrelated trees and the prediction by committee, Random Forests are far more accurate than decision trees alone in their prediction.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/15.jpg" title="Random Forest" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/15.jpg" title="Random Forest" class="img-fluid" %}
     </div>
 </div>
 <div class="caption">
-    Random Forest (source: <link rel="Towards Data Science" href="https://towardsdatascience.com/understanding-random-forest-58381e0602d2">)
+    Random Forest (source: <a href="https://towardsdatascience.com/understanding-random-forest-58381e0602d2">Towards Data Science</a>)
 </div>
 <br/><br/>
 ### **Implementation**
@@ -86,7 +86,7 @@ The Random Forest classifier has two really important hyperparameters. `max_dept
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/17.jpg" title="Number of trees" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/17.jpg" title="Number of trees" class="img-fluid" %}
     </div>
 </div>
 <br/><br/>
@@ -100,13 +100,6 @@ The Random Forest classifier has two really important hyperparameters. `max_dept
     </div>
 </div>
 <div class="caption">
-    Hallo <a href="https://www.w3schools.com/">Visit W3Schools.com!</a>
+    Confusion Matrix
 </div>
 
-
-
-
-<figure>
-  <img src="https://patrick-richter.github.io/assets/img/16.jpg" alt="Confusion matrix" style="width:100%">
-  <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
-</figure>
