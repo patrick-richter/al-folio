@@ -92,7 +92,20 @@ The Random Forest classifier has two really important hyperparameters. `max_dept
 <br/><br/>
 ### **Results**
 
+By comparing the predictions with the real labels, we obtain the training and test accuracy:
 
+<script src="https://gist.github.com/patrick-richter/981eaa67dfdba061b41c637ead27ebab.js"></script>
+
+```
+Training accuracy: 99.95 %
+Test accuracy: 89.11 %
+```
+
+The achieved test accuracy of almost 90 % is quite impressive, especially considering that the Random Forest classifier is a comparatively simple algorithm in contrast to the Deep Neural Networks that would otherwise be used for such tasks. Moreover, by using count vectoriser as the vector representation, any context in the sentences is lost. If we had used a CNN for example, we could have implemented better representations such as Word Embedding. The current benchmark (they used a CNN) by [Zhang et al. (2015)](https://papers.nips.cc/paper/2015/file/250cf8b51c773f3f8dc8b4be867a9a02-Paper.pdf) for this dataset is 92 %.
+
+When looking at the confusion matrix, we can see that most of the prediction errors originate from mixing up the "Business" and "Sci/Tech" categories. "Sports", as you would expect, is quite distinguishable and has the highest prediction accuracy with 97.2 %.
+
+<script src="https://gist.github.com/patrick-richter/8615eb731b829098957ed27f49a7641b.js"></script>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
