@@ -48,6 +48,13 @@ Finally, to make our data processable for the SVM classifier, we need to vectori
 <br/><br/>
 ### **SVM Classifier**
 
+A Support Vector Machines (SVM) is a supervised Machine Learning algorithm that works really well for text classification problems. It is quick and performs better than Deep Learning algorithms for a small number of samples.
+
+In general, SVMs try to find the best hyperplane to split n-dimensional data. This approach works well for linearly seperable data. However, most real-world problems are nonlinear. This is where kernels come into play. Kernels transforms linearly inseparable data into a higher-dimensional space, making the data linearly separable again.
+
+Finding the right kernel with the fitting hyperparameters is the main challenge when designing an SVM classifier. Fortunately, Scikit-learn offer the `GridSearchCV` class that helps finding the right hyperparameters. You can easily imput your parameter space and the algorithm will output the best hyperparameter combination. In our case, to speed up the process we are only inputting a subsample of the whole dataset.
+
+
 <script src="https://gist.github.com/patrick-richter/5f9538480c04afb5d0582b56da9c9fde.js"></script>
 
 ```
