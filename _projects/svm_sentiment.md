@@ -67,3 +67,11 @@ Test accuracy: 86.07 %
 
 <script src="https://gist.github.com/patrick-richter/3363b11ec2aad3ae4907e233e5b5d610.js"></script>
 
+<div class="row">
+        <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/20.jpg" title="Confusion matrix" class="img-fluid"%}
+    </div>
+</div>
+<div class="caption">
+    Confusion matrix (top left = true negatives, top right = false positives, bottom left = false negatives, and bottom right = true positives)
+</div>
