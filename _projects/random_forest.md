@@ -115,4 +115,3 @@ When looking at the confusion matrix, we can see that most of the prediction err
 <div class="caption">
     Confusion Matrix
 </div>
-
