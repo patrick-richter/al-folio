@@ -54,7 +54,7 @@ One common approach to limit the vocabulary is by assuming that the words that o
 
 <script src="https://gist.github.com/patrick-richter/c833741c218588ff1c5f2f0fcddbaebc.js"></script>
 
-As the final step of preprocessing, the reviews must be encoded. In other words, the text (now only consisting of the words that are included in the vocabulary) is converted to a sequence where each integer represents one word in the vocabulary. Bellow, you can see an exemplary sequence.
+As the final step of preprocessing, the reviews must be encoded. In other words, the text (now only consisting of the words that are included in the vocabulary) is converted to a sequence where each integer represents one word in the vocabulary. Below, you can see an exemplary sequence.
 
 Furthermore, the maximum number of words of a sequence is limited to prevent the input data from getting too large. The sequences are padded to a length of 550, meaning all words that exceed the limit are cut off.
 
