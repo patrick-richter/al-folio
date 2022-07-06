@@ -15,7 +15,12 @@ category: Classic Machine Learning
 <br/><br/>
 ### **Dataset**
 
+The IMDB movie review dataset contains reviews along with a positive or negative sentiment associated with each movie review (see bellow for an example). Due to the size of the whole dataset, we will only use a subset here. It contains 5,000 training samples and 1,500 test samples. Before we get started, download and save the training data [here](https://patrick-richter.github.io/assets/csv/movie_review_train.csv) and the test data [here](https://patrick-richter.github.io/assets/csv/movie_review_test.csv) (make sure that you set the format to `Page Source`).
 
+```
+Sentiment: "negative"
+Review: "There's a thin line between being theatrical and being just plain forced. Forced acting. Forced takes. Forced plot. Even forced photography."
+```
 <br/><br/>
 ### **Prerequirements**
 
