@@ -52,7 +52,7 @@ A Support Vector Machines (SVM) is a supervised Machine Learning algorithm that 
 
 In general, SVMs try to find the best hyperplane to split n-dimensional data. This approach works well for linearly seperable data. However, most real-world problems are nonlinear. This is where kernels come into play. Kernels transforms linearly inseparable data into a higher-dimensional space, making the data linearly separable again.
 
-Finding the right kernel with the fitting hyperparameters is the main challenge when designing an SVM classifier. Fortunately, Scikit-learn offer the `GridSearchCV` class that helps finding the right hyperparameters. You can easily imput your parameter space and the algorithm will output the best hyperparameter combination. In our case, to speed up the process we are only inputting a subsample of the whole dataset.
+Finding the right kernel with the fitting hyperparameters is the main challenge when designing an SVM classifier. Fortunately, Scikit-learn offer the `GridSearchCV` class that helps finding the right hyperparameters. You can easily input your parameter space and the algorithm will output the best hyperparameter combination. In our case, to speed up the process we are only inputting a subsample of the whole dataset.
 
 
 <script src="https://gist.github.com/patrick-richter/5f9538480c04afb5d0582b56da9c9fde.js"></script>
@@ -63,6 +63,7 @@ Finding the right kernel with the fitting hyperparameters is the main challenge 
 <br/><br/>
 ### **Results**
 
+Now, we take the just obtained optimal set of hyperparameters and initialise, fit and assess the SVM classifier.
 
 <script src="https://gist.github.com/patrick-richter/6a1f6d10e2864f248bf3e898fd23c035.js"></script>
 
@@ -71,6 +72,7 @@ Train accuracy: 95.82 %
 Test accuracy: 86.07 %
 ```
 
+With those hyperparameters, we achieved an 86 % accuracy on the test dataset, which is quite good considering that we only have a small subset of 6000 training samples here. However, with a more extensive hyperparameter search (that could take multiple hours), there might be some room for improvement still.
 
 <script src="https://gist.github.com/patrick-richter/3363b11ec2aad3ae4907e233e5b5d610.js"></script>
 
