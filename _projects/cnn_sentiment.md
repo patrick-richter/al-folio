@@ -15,7 +15,7 @@ category: Deep Learning
 <br/><br/>
 ### **Dataset**
 
-The data used in this project is a large dataset of Ford motor vehicle reviews. Each of the 1,382 reviews is labelled with a positive or negative sentiment. The goal of this project is to train a Convolutional Neural Network (CNN) with Word Embedding that can correctly predict the sentiment of a review. You can download the dataset by clicking this [Link](https://patrick-richter.github.io/assets/csv/car_reviews.csv) and subsequently saving the csv file (make sure that you set the format to `Page Source). To give you brief idea of how these reviews look like, here is an example of a negative sentiment review:
+The data used in this project is a large dataset of **Ford motor vehicle reviews**. Each of the **1,382 reviews** is labelled with a positive or negative sentiment. The goal of this project is to train a **Convolutional Neural Network (CNN) with Word Embedding** that can correctly predict the sentiment of a review. You can download the dataset by clicking this [Link](https://patrick-richter.github.io/assets/csv/car_reviews.csv) and subsequently saving the csv file (make sure that you set the format to `Page Source`). To give you brief idea of how these reviews look like, here is an example of a negative sentiment review:
 
 ```
 "In 1992, we bought a new Taurus and we really loved it. 
@@ -26,37 +26,37 @@ I do not like the new car half as much as I liked our other one."
 <br/><br/>
 ### **Prerequirements**
 
-The project is written in Python and, before starting, make sure to install and import the following libraries.
+The project is written in **Python** and, before starting, make sure to install and import the following **libraries**.
 
 <script src="https://gist.github.com/patrick-richter/f5935b8651b1fce5a54aa279fe21ff88.js"></script>
 <br/><br/>
 ### **Data Preprocessing**
 
-To be able to preprocess the data, the csv file is first of all read with pandas and transformed into a numpy array. Then, all negative reviews receive the label 0, whereas all positive reviews receive 1 as their label.
+To be able to preprocess the data, the **csv file** is first of all **read with pandas** and transformed into a numpy array. Then, all negative reviews receive the label 0, whereas all positive reviews receive 1 as their label.
 
 <script src="https://gist.github.com/patrick-richter/b64f6ea0eeb602649fa1253937fcaedd.js"></script>
 
-The next step is to remove all stop words (words such as "the", "I", or "he" that occur so frequently that they are deemed irrelevant for the classification), digits, and punctuation. By using a pre-existing stop word list from the nltk library, the undesirable words can be easily discarded.
+The next step is to **remove all stop words** (words such as "the", "I", or "he" that occur so frequently that they are deemed irrelevant for the classification), **digits**, and **punctuation**. By using a pre-existing stop word list from the nltk library, the undesirable words can be easily discarded.
 
 <script src="https://gist.github.com/patrick-richter/060239691b03d428c3c7cba00ffd3333.js"></script>
 
-Following that, the remaining words are stemmed, i.e., they are reduced to their base word or stem so that similar words are being represented by the same stem word. For example, ‘leaking’ and ‘leaks’ would both be converted to ‘leak’ and would therefore be seen as the same word in the upcoming steps. Due to better performance, the Porter Stemmer, which is slightly less aggressive than the alternative Snowball Stemmer, was implemented.
+Following that, the remaining words are stemmed, i.e., they are reduced to their base word or stem so that similar words are being represented by the same stem word. For example, ‘leaking’ and ‘leaks’ would both be converted to ‘leak’ and would therefore be seen as the same word in the upcoming steps. Due to better performance, the **Porter Stemmer**, which is slightly less aggressive than the alternative Snowball Stemmer, was implemented.
 
 <script src="https://gist.github.com/patrick-richter/289a51d0b99af9cff7d46ca6717cfb5e.js"></script>
 
-To be able to later assess the model with no bias, it is paramount to split the dataset into a training dataset that is used for training, and a test dataset that serves for unbiased performance assessment. Here, 20 % of the dataset is used for testing. Also note that it is important to set a random state, making sure that we always have the same split, even when you run it multiple times.
+To be able to later assess the model with no bias, it is paramount to **split the dataset** into a training dataset that is used for training, and a test dataset that serves for unbiased performance assessment. Here, 20 % of the dataset is used for testing. Also note that it is important to set a random state, making sure that we always have the same split, even when you run it multiple times.
 
 <script src="https://gist.github.com/patrick-richter/c8078f707316a5310f9fc3d27fd5434f.js"></script>
 
-For the Word Embedding approach, it is necessary to have a vocabulary of all words that occur in the training dataset. However, it has been shown that generally Word Embeddings where the vocabulary has been reduced to only the most predictive words, yield better results and train significantly faster due to the reduced data.
+For the Word Embedding approach, it is necessary to have a **vocabulary** of all words that occur in the training dataset. However, it has been shown that generally Word Embeddings where the vocabulary has been reduced to only the most predictive words, yield better results and train significantly faster due to the reduced data.
 
-One common approach to limit the vocabulary is by assuming that the words that occur very rarely are less predictive than the words with higher occurrence. Here, it is decided (through trial and error) that only words that occur 5 times or more often are included into the vocabulary. This reduces the vocabulary from 9,033 to 3,424 different words.
+One common approach to limit the vocabulary is by assuming that the words that occur very rarely are less predictive than the words with higher occurrence. Here, it is decided (through trial and error) that only **words that occur 5 times or more** often are **included into the vocabulary**. This reduces the vocabulary from 9,033 to 3,424 different words.
 
 <script src="https://gist.github.com/patrick-richter/c833741c218588ff1c5f2f0fcddbaebc.js"></script>
 
-As the final step of preprocessing, the reviews must be encoded. In other words, the text (now only consisting of the words that are included in the vocabulary) is converted to a sequence where each integer represents one word in the vocabulary. Below, you can see an exemplary sequence.
+As the final step of preprocessing, the **reviews must be encoded**. In other words, the text (now only consisting of the words that are included in the vocabulary) is converted to a sequence where each integer represents one word in the vocabulary. Below, you can see an exemplary sequence.
 
-Furthermore, the maximum number of words of a sequence is limited to prevent the input data from getting too large. The sequences are padded to a length of 550, meaning all words that exceed the limit are cut off.
+Furthermore, the **maximum number of words** of a sequence is limited to prevent the input data from getting too large. The sequences are padded to a length of 550, meaning all words that exceed the limit are cut off.
 
 <script src="https://gist.github.com/patrick-richter/e36a5bc1acee398f32f26943a8de18a2.js"></script>
 
@@ -105,11 +105,11 @@ Furthermore, the maximum number of words of a sequence is limited to prevent the
 <br/><br/>
 ### **CNN Model with Word Embedding**
 
-A Word Embedding is a learned representation for text analysis – typically in the form of a vector – where words that are closer in the vector space are expected to be close in meaning. The representation of words is learned based on the usage of words, allowing words that are used in similar ways to result in having similar representations, naturally capturing their meaning.
+A **Word Embedding** is a learned representation for text analysis – typically in the form of a vector – where words that are closer in the vector space are expected to be close in meaning. The representation of words is learned based on the usage of words, allowing words that are used in similar ways to result in having similar representations, naturally capturing their meaning.
 
-There are several methods how you can implement Word Embedding. For this task, the word embedding is implemented into a Neural Network in form of a layer. In the training process, the embedding layer's weights are updated to best represent each of the words as a vector. This approach will learn an embedding both targeted to the specific text data (in that case, car reviews) and to the classification task.
+There are several methods how you can implement Word Embedding. For this task, the word embedding is **implemented into a Neural Network in form of a layer**. In the training process, the embedding layer's weights are updated to best represent each of the words as a vector. This approach will learn an embedding both targeted to the specific text data (in that case, car reviews) and to the classification task.
 
-The Neural Network is built by using keras. After the embedding and convolutional layer, the model also consists of two fully connected layers for the classification.
+The Neural Network is built by using **keras**. After the embedding and convolutional layer, the model also consists of two fully connected layers for the classification.
 
 <script src="https://gist.github.com/patrick-richter/485975ee6d7114e7a29f29f932b04a01.js"></script>
 
@@ -154,7 +154,7 @@ Epoch 4/4
 <br/><br/>
 ### **Results**
 
-The model achieves an 83.03 % accuracy on the test data, which is quite an impressive result, considering the relatively small dataset. With even more data, perhaps, the Word Embedding could have even been more effective.
+The model achieves an **83.03 % accuracy** on the test data, which is quite an impressive result, considering the small dataset. With even more data, perhaps, the **Word Embedding could have even been more effective**.
 
 <script src="https://gist.github.com/patrick-richter/f29f9144a52f1e054c8c3f71b9e8b325.js"></script>
 
@@ -162,7 +162,7 @@ The model achieves an 83.03 % accuracy on the test data, which is quite an impre
 The Word Embedding CNN achieves a 99.0 % accuracy on training data and a 83.03 % accuracy on test data.
 ```
 
-The confusion matrix demonstrates that the classification is well balanced (similar false positive and false negative rate).
+The **confusion matrix** demonstrates that the classification is well balanced (similar false positive and false negative rate).
 
 <script src="https://gist.github.com/patrick-richter/493b94d11c303d0f624cf7cc280c22b1.js"></script>
 
