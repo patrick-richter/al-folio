@@ -1,6 +1,6 @@
 ---
 layout: page
-title: SVM: Review Sentiment Classification
+title: 'SVM: Review Sentiment Classification'
 description: 
 img: assets/img/1.jpg
 importance: 3
