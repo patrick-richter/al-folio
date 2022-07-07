@@ -12,6 +12,7 @@ category: Deep Learning
         {% include figure.html path="assets/img/30.jpg" title="Faces" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
+
 One of the most important applications of Deep Learning is **Computer Vision**. Today, we will take a deeper dive into this topic and deploy a **Convolutional Neural Network (CNN)** to predict the age and the gender of faces from the **UTKFace dataset**.
 <br/><br/>
 ### **Dataset**
@@ -77,10 +78,7 @@ Epoch 2/60
 200/200 [==============================] - 14s 72ms/step - loss: 664.3820 - dense_age_loss: 365.3248 - dense_gender_loss: 0.5981 - dense_age_mae: 14.6565 - dense_gender_accuracy: 0.6846 - val_loss: 592.0073 - val_dense_age_loss: 328.2217 - val_dense_gender_loss: 0.5276 - val_dense_age_mae: 13.6442 - val_dense_gender_accuracy: 0.7430
 
 
-
 ...
-
-
 
 
 Epoch 59/60
