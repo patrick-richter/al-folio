@@ -12,8 +12,6 @@ category: Deep Learning
         {% include figure.html path="assets/img/30.jpg" title="Faces" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
-<br/><br/>
-
 One of the most important applications of Deep Learning is **Computer Vision**. Today, we will take a deeper dive into this topic and deploy a **Convolutional Neural Network (CNN)** to predict the age and the gender of faces from the **UTKFace dataset**.
 <br/><br/>
 ### **Dataset**
@@ -67,7 +65,7 @@ Generate batches of tensor image data with real-time data augmentation.sssdfsaf
 ```
 Found 4000 validated image filenames.
 Found 1000 validated image filenames.
-``
+```
 
 ### **Training**
 
@@ -127,18 +125,9 @@ _________________________________________________________________
 
 Now, the model only needs to be trained with `model.fit()`. Subsequently, the model can predict the sentiments for both the training and the test data.
 
-<script src="https://gist.github.com/patrick-richter/24f55c357f2e006062ae15212612db94.js"></script>
 
-```
-Epoch 1/4
-35/35 - 1s - loss: 0.6933 - accuracy: 0.5176 - val_loss: 0.6896 - val_accuracy: 0.5668
-Epoch 2/4
-35/35 - 0s - loss: 0.6468 - accuracy: 0.6615 - val_loss: 0.6058 - val_accuracy: 0.7292
-Epoch 3/4
-35/35 - 0s - loss: 0.3906 - accuracy: 0.8588 - val_loss: 0.4516 - val_accuracy: 0.8303
-Epoch 4/4
-35/35 - 1s - loss: 0.1246 - accuracy: 0.9674 - val_loss: 0.4976 - val_accuracy: 0.8303
-```
+
+
 <br/><br/>
 ### **Results**
 
