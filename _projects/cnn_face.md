@@ -11,7 +11,7 @@ category: Deep Learning
 
 
 
-You can download the dataset by clicking this [Link](https://patrick-richter.github.io/assets/csv/car_reviews.csv) and subsequently saving the csv file (make sure that you set the format to `Page Source`). To give you brief idea of how these reviews look like, here is an example of a negative sentiment review:
+You can download the dataset by clicking this [Link](https://patrick-richter.github.io/assets/zip/train_test.zip) and subsequently saving the csv file (make sure that you set the format to `Page Source`). To give you brief idea of how these reviews look like, here is an example of a negative sentiment review:
 
 ```
 "In 1992, we bought a new Taurus and we really loved it. 
