@@ -74,7 +74,9 @@ Found 1000 validated image filenames.
 <br/><br/>
 ### **CNN Model Construction**
 
+As we are facing a **muti-label problem**, we need to construct a CNN model that outputs two different values. `keras` offers a way to split the model in two at any point of the Neural Network. 
 
+Here, two of the three convolutional layers (including padding) are shared between the two branches. After the second convolutional layer, the age and the gender prediction **split into two branches**. Each of the branches include one more convolutional layer, one dense layer, and one output layer. As you can see below, dropout is also employed in each of the branches and in the shared-learning part.
 
 <script src="https://gist.github.com/patrick-richter/138cd717b5c78177db74175152a015d8.js"></script>
 
@@ -88,6 +90,8 @@ Found 1000 validated image filenames.
 </div>
 <br/><br/>
 ### **Model Training**
+
+The following step, obviously, is to **train the model**. Since the total loss is the sum of the age and the gender loss, we need to make sure that the values of the two loss functions are balanced. Therefore, we weigh the `binary_crossentropy` loss of the gender classification 500 times higher than the `mse` of the age estimation. The model is trained for 60 epochs.
 
 <script src="https://gist.github.com/patrick-richter/603f720753c5e045a8b626d11480f5c3.js"></script>
 
@@ -104,6 +108,12 @@ Epoch 59/60
 Epoch 60/60
 200/200 [==============================] - 15s 74ms/step - loss: 266.4663 - dense_age_loss: 129.6572 - dense_gender_loss: 0.2736 - dense_age_mae: 8.6207 - dense_gender_accuracy: 0.8847 - val_loss: 278.6100 - val_dense_age_loss: 122.3719 - val_dense_gender_loss: 0.3125 - val_dense_age_mae: 8.1059 - val_dense_gender_accuracy: 0.8770
 ```
+<br/><br/>
+### **Results**
+
+On the test data, the model achieves an **8.11 MAE on age estimation** and an **87.70 % accuracy on gender classification**. This is a good result, considering the small dataset and the fact that two different variables are predicted in one model.
+
+When we plot the **training curves**, we can see that due to dropout and data augmentation there is **no over- or underfitting** present.
 
 <script src="https://gist.github.com/patrick-richter/3b25d563450db7b877f50099a7d1c7b7.js"></script>
 
@@ -115,12 +125,8 @@ Epoch 60/60
 <div class="caption">
     Training performance
 </div>
-<br/><br/>
-### **Results**
 
-The model achieves an **83.03 % accuracy** on the test data, which is quite an impressive result, considering the small dataset. With even more data, perhaps, the **Word Embedding could have even been more effective**.
-
-
+Finally, to give you an idea of how the predictions look like with images present, I sampled 20 images and printed out the prediction with the actual label in brackets. Especially the age estimation would be quite hard even for humans.
 
 <script src="https://gist.github.com/patrick-richter/dc92047f522be9562f6f2e8bdfc791e0.js"></script>
 
