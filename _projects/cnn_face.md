@@ -7,24 +7,29 @@ importance: 1
 category: Deep Learning
 ---
 
+One of the most important applications of Deep Learning is **Computer Vision**. Today, we will take a deeper dive into this topic and deploy a **Convolutional Neural Network (CNN)** to predict the age and the gender of faces from the **UTKFace dataset**.
+
 ### **Dataset**
 
-
-
-You can download the dataset by clicking this [Link](https://patrick-richter.github.io/assets/zip/train_test.zip) and subsequently saving the csv file (make sure that you set the format to `Page Source`). To give you brief idea of how these reviews look like, here is an example of a negative sentiment review:
-
-```
-"In 1992, we bought a new Taurus and we really loved it. 
-So in 1999, we decided to try a new Taurus. 
-I did not care for the style of the newer version but bought it anyway. 
-I do not like the new car half as much as I liked our other one."
-```
-<br/><br/>
-### **Prerequirements**
+The **UTKFace dataset** is a large-scale face dataset with an **age span from 0 to 116 years old** with a resolution of 128x128. However, to avoid long training durations, we will only use a **subset of 5,000 images**. You can download the dataset by clicking this [Link](https://patrick-richter.github.io/assets/zip/train_test.zip) (full dataset can be found on [Kaggle](https://www.kaggle.com/datasets/jangedoo/utkface-new)).
 
 The project is written in **Python** and, before starting, make sure to install and import the following **libraries**.
 
+<script src="https://gist.github.com/patrick-richter/c31f5464e7cfae8f723d758591e4766d.js"></script>
 
+To give you brief idea of how the data looks like, we will first **visualise a couple of images**. The labels regarding age and gender are hidden in the file name. For instance, the person with the file path `train_test/28_1_0_20170117180708809.jpg.chip.jpg` is 28 years old and is female (0 = female, 1 = male).
+
+<script src="https://gist.github.com/patrick-richter/0f2dfb96c162191dc4c3b5ab40f2ed8b.js"></script>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/31.jpg" title="Visualisation" class="img-fluid" %}
+    </div>
+</div>
+<div class="caption">
+    Visualisation of 20 faces
+</div>
+<br/><br/>
 ### **Data Preprocessing**
 
 To be able to preprocess the data, the **csv file** is first of all **read with pandas** and transformed into a numpy array. Then, all negative reviews receive the label 0, whereas all positive reviews receive 1 as their label.
