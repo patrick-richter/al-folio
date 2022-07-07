@@ -38,7 +38,7 @@ To give you brief idea of how the data looks like, we will first **visualise a c
 <br/><br/>
 ### **Data Preprocessing**
 
-
+Before we can start with preprocessing, the data needs to be stored in a pandas `DataFrame`. Then we can split the data into **training and test data**, with 20 % being used for testing purposes.
 
 <script src="https://gist.github.com/patrick-richter/99b7a7ccd9da4ef629594623d9b96cc8.js"></script>
 
@@ -59,7 +59,11 @@ To give you brief idea of how the data looks like, we will first **visualise a c
 [5000 rows x 3 columns]
 ```
 
-Generate batches of tensor image data with real-time data augmentation.sssdfsaf
+**Data Augmentation** is an enormously useful tool that is used in most Computer Vision projects. By applying certain variations such as rotation, zoom, or a horizontal flip to the images, it artificially creates new training data from already existing training data
+
+It is so popular mainly due to two big advantages. First, it helps you **getting more training** data without having to mine new data. Secondly, it is a key tool to **prevent overfitting**. The model can never fit perfectly on the training data because each epoch you will have slight variations of each image.
+
+The easiest way of implementing Data Augmentation is with the `ImageDataGenerator` from `tensorflow`. Here, we apply rotation, zoom, and a horizontal flip to our images. Moreover, the rgb value range is scaled to 0 and 1.
 
 <script src="https://gist.github.com/patrick-richter/139d7e751e09ed73c299f2c379c952a3.js"></script>
 
@@ -89,35 +93,7 @@ Epoch 60/60
 <br/><br/>
 ### **CNN Model with Word Embedding**
 
-A **Word Embedding** is a learned representation for text analysis – typically in the form of a vector – where words that are closer in the vector space are expected to be close in meaning. The representation of words is learned based on the usage of words, allowing words that are used in similar ways to result in having similar representations, naturally capturing their meaning.
 
-There are several methods how you can implement Word Embedding. For this task, the word embedding is **implemented into a Neural Network in form of a layer**. In the training process, the embedding layer's weights are updated to best represent each of the words as a vector. This approach will learn an embedding both targeted to the specific text data (in that case, car reviews) and to the classification task.
-
-The Neural Network is built by using **keras**. After the embedding and convolutional layer, the model also consists of two fully connected layers for the classification.
-
-<script src="https://gist.github.com/patrick-richter/485975ee6d7114e7a29f29f932b04a01.js"></script>
-
-```
-_________________________________________________________________
-Layer (type)                 Output Shape              Param #   
-=================================================================
-embedding_12 (Embedding)     (None, 550, 120)          411000    
-_________________________________________________________________
-conv1d_12 (Conv1D)           (None, 543, 32)           30752     
-_________________________________________________________________
-max_pooling1d_12 (MaxPooling (None, 271, 32)           0         
-_________________________________________________________________
-flatten_12 (Flatten)         (None, 8672)              0         
-_________________________________________________________________
-dense_24 (Dense)             (None, 10)                86730     
-_________________________________________________________________
-dense_25 (Dense)             (None, 1)                 11        
-=================================================================
-Total params: 528,493
-Trainable params: 528,493
-Non-trainable params: 0
-_________________________________________________________________
-```
 <br/><br/>
 ### **Model Training**
 
@@ -143,9 +119,9 @@ The **confusion matrix** demonstrates that the classification is well balanced (
 
 <div class="row">
         <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/13.jpg" title="Confusion matrix" class="img-fluid"%}
+        {% include figure.html path="assets/img/32.jpg" title="Predictions" class="img-fluid"%}
     </div>
 </div>
 <div class="caption">
-    Confusion matrix (top left = true negatives, top right = false positives, bottom left = false negatives, and bottom right = true positives)
+    20 Faces with prediction and actual age and gender in brackets
 </div>
