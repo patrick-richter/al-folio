@@ -41,8 +41,22 @@ To give you brief idea of how the data looks like, we will first **visualise a c
 
 
 
+### **Training**
 
 
+```
+Epoch 1/60
+200/200 [==============================] - 15s 73ms/step - loss: 862.1603 - dense_age_loss: 521.0098 - dense_gender_loss: 0.6823 - dense_age_mae: 17.5374 - dense_gender_accuracy: 0.6021 - val_loss: 689.9260 - val_dense_age_loss: 393.1925 - val_dense_gender_loss: 0.5935 - val_dense_age_mae: 14.5779 - val_dense_gender_accuracy: 0.6960
+Epoch 2/60
+200/200 [==============================] - 14s 72ms/step - loss: 664.3820 - dense_age_loss: 365.3248 - dense_gender_loss: 0.5981 - dense_age_mae: 14.6565 - dense_gender_accuracy: 0.6846 - val_loss: 592.0073 - val_dense_age_loss: 328.2217 - val_dense_gender_loss: 0.5276 - val_dense_age_mae: 13.6442 - val_dense_gender_accuracy: 0.7430
+<br/><br/>
+...
+<br/><br/>
+Epoch 59/60
+200/200 [==============================] - 15s 73ms/step - loss: 275.9303 - dense_age_loss: 138.7035 - dense_gender_loss: 0.2745 - dense_age_mae: 8.8752 - dense_gender_accuracy: 0.8787 - val_loss: 294.9626 - val_dense_age_loss: 132.8631 - val_dense_gender_loss: 0.3242 - val_dense_age_mae: 8.2970 - val_dense_gender_accuracy: 0.8750
+Epoch 60/60
+200/200 [==============================] - 15s 74ms/step - loss: 266.4663 - dense_age_loss: 129.6572 - dense_gender_loss: 0.2736 - dense_age_mae: 8.6207 - dense_gender_accuracy: 0.8847 - val_loss: 278.6100 - val_dense_age_loss: 122.3719 - val_dense_gender_loss: 0.3125 - val_dense_age_mae: 8.1059 - val_dense_gender_accuracy: 0.8770
+```
 <br/><br/>
 ### **CNN Model with Word Embedding**
 
