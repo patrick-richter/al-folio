@@ -9,7 +9,7 @@ category: Deep Learning
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="Faces" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/30.jpg" title="Faces" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <br/><br/>
@@ -41,6 +41,34 @@ To give you brief idea of how the data looks like, we will first **visualise a c
 
 
 
+<script src="https://gist.github.com/patrick-richter/99b7a7ccd9da4ef629594623d9b96cc8.js"></script>
+
+```
+                                              filename   age  gender
+0     train_test/86_1_0_20170120225751953.jpg.chip.jpg  86.0       1
+1     train_test/26_1_0_20170116171048641.jpg.chip.jpg  26.0       1
+2     train_test/52_0_1_20170117161018159.jpg.chip.jpg  52.0       0
+3     train_test/16_0_0_20170104003740977.jpg.chip.jpg  16.0       0
+4     train_test/27_0_3_20170119210058457.jpg.chip.jpg  27.0       0
+...                                                ...   ...     ...
+4995  train_test/86_1_2_20170105174813405.jpg.chip.jpg  86.0       1
+4996  train_test/28_0_2_20170107212142294.jpg.chip.jpg  28.0       0
+4997   train_test/1_1_0_20170109194452834.jpg.chip.jpg   1.0       1
+4998  train_test/54_0_0_20170109010040814.jpg.chip.jpg  54.0       0
+4999  train_test/52_0_3_20170119200211340.jpg.chip.jpg  52.0       0
+
+[5000 rows x 3 columns]
+```
+
+Generate batches of tensor image data with real-time data augmentation.sssdfsaf
+
+<script src="https://gist.github.com/patrick-richter/139d7e751e09ed73c299f2c379c952a3.js"></script>
+
+```
+Found 4000 validated image filenames.
+Found 1000 validated image filenames.
+``
+
 ### **Training**
 
 
@@ -49,9 +77,14 @@ Epoch 1/60
 200/200 [==============================] - 15s 73ms/step - loss: 862.1603 - dense_age_loss: 521.0098 - dense_gender_loss: 0.6823 - dense_age_mae: 17.5374 - dense_gender_accuracy: 0.6021 - val_loss: 689.9260 - val_dense_age_loss: 393.1925 - val_dense_gender_loss: 0.5935 - val_dense_age_mae: 14.5779 - val_dense_gender_accuracy: 0.6960
 Epoch 2/60
 200/200 [==============================] - 14s 72ms/step - loss: 664.3820 - dense_age_loss: 365.3248 - dense_gender_loss: 0.5981 - dense_age_mae: 14.6565 - dense_gender_accuracy: 0.6846 - val_loss: 592.0073 - val_dense_age_loss: 328.2217 - val_dense_gender_loss: 0.5276 - val_dense_age_mae: 13.6442 - val_dense_gender_accuracy: 0.7430
-<br/><br/>
+
+
+
 ...
-<br/><br/>
+
+
+
+
 Epoch 59/60
 200/200 [==============================] - 15s 73ms/step - loss: 275.9303 - dense_age_loss: 138.7035 - dense_gender_loss: 0.2745 - dense_age_mae: 8.8752 - dense_gender_accuracy: 0.8787 - val_loss: 294.9626 - val_dense_age_loss: 132.8631 - val_dense_gender_loss: 0.3242 - val_dense_age_mae: 8.2970 - val_dense_gender_accuracy: 0.8750
 Epoch 60/60
