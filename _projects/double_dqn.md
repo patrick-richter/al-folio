@@ -7,13 +7,8 @@ importance: 2
 category: Reinforcement Learning
 ---
 
-<video autoplay>
-    <source src="https://patrick-richter.github.io/assets/vid/lunarlander.mp4" type="video/mp4">
-</video>
 
-<video width="320" height="240" controls autoplay>
-    <source src=”http://techslides.com/demos/sample-videos/small.ogv” type=video/ogg>
-</video>
+<iframe src="https://youtu.be/0HuI1QLOCJM?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" allow="autoplay; encrypted-media"></iframe>
 
 ### **Dataset**
 
