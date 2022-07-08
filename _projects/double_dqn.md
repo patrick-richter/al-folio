@@ -7,6 +7,14 @@ importance: 2
 category: Reinforcement Learning
 ---
 
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/1.jpg" title="Movie" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<br/><br/>
+### **Lunar Lander Environment**
+
 
 <div class="video-container"><iframe src="https://www.youtube.com/embed/0HuI1QLOCJM?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&loop=1" frameborder="0" allow="autoplay; encrypted-media"></iframe></div>
 
