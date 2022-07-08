@@ -10,9 +10,7 @@ category: Reinforcement Learning
 
 <iframe src="https://www.youtube.com/embed/0HuI1QLOCJM?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" allow="autoplay; encrypted-media"></iframe>
 
-<iframe width="420" height="315"
-src="https://youtu.be/0HuI1QLOCJM?autoplay=1&mute=1">
-</iframe>
+Hallo djfkdsflsd
 
 <iframe width="420" height="315"
 src="https://www.youtube.com/embed/0HuI1QLOCJM?autoplay=1&mute=1">
