@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 'Double DQN Applied to Lunar Lander'
+title: 'Double DQN Applied To Lunar Lander'
 description: 
 img: assets/img/40.jpg
 importance: 2
