@@ -7,8 +7,8 @@ importance: 2
 category: Reinforcement Learning
 ---
 
-<video width="320" height="240" controls autoplay>
-    <source src="https://patrick-richter.github.io/assets/vid/lunarlander.mp4" type=video/mp4>
+<video autoplay>
+    <source src="https://patrick-richter.github.io/assets/vid/lunarlander.mp4" type="video/mp4">
 </video>
 
 <video width="320" height="240" controls autoplay>
