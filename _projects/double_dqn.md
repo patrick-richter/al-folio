@@ -13,10 +13,19 @@ category: Reinforcement Learning
 Hallo djfkdsflsd
 
 <iframe width="420" height="315"
-src="https://www.youtube.com/embed/0HuI1QLOCJM?autoplay=1&mute=1">
+src="https://www.youtube.com/embed/0HuI1QLOCJM?autoplay=1&loop=1">
 </iframe>
 
 skdölfdskjf
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/0HuI1QLOCJM?autoplay=1&loop=1" frameborder="0" allowfullscreen></iframe>
+
+sdfsdf
+
+<iframe src="https://www.youtube.com/embed/0HuI1QLOCJM?autoplay=1&loop=1" frameborder="0" allowfullscreen></iframe>
+
+sdfsdf
+
 
 <iframe width="560" height="315" src="http://www.youtube.com/embed/0HuI1QLOCJM?autoplay=1&loop=1&playlist=GRonxog5mbw" frameborder="0" allowfullscreen></iframe>
 
