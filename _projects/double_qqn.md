@@ -8,8 +8,12 @@ category: Reinforcement Learning
 ---
 
 <video width="320" height="240" controls autoplay>
-      <source src="https://patrick-richter.github.io/assets/vid/lunarlander.mp4" type=video/mp4>
-    </video>
+    <source src="https://patrick-richter.github.io/assets/vid/lunarlander.mp4" type=video/mp4>
+</video>
+
+<video width="320" height="240" controls autoplay>
+    <source src=”http://techslides.com/demos/sample-videos/small.ogv” type=video/ogg>
+</video>
 
 ### **Dataset**
 
