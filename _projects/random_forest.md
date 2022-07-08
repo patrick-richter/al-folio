@@ -62,7 +62,7 @@ Before we go into Random Forests themselves, it is important to understand how *
     </div>
 </div>
 <div class="caption">
-    Simple decsion tree (source: <a href="https://towardsdatascience.com/understanding-random-forest-58381e0602d2">Towards Data Science</a>)
+    Simple decision tree (source: <a href="https://towardsdatascience.com/understanding-random-forest-58381e0602d2">Towards Data Science</a>)
 </div>
 
 A **Random Forest** is an **ensemble of multiple decision trees**, combining their predictions the wisdom of many to provide a more robust prediction (see figure below). To ensure that the trees are as uncorrelated as possible, Random Forest modifies the decision trees in two ways to add more randomness. **Bagging**, the first method, refers to the process that each tree is trained with a random subset of samples, instead of the whole dataset. **Feature Randomness** introduces randomness by only letting the decision trees pick from a subset of features at each point. Due to the highly uncorrelated trees and the prediction by committee, Random Forests are far more accurate than decision trees alone in their prediction.
