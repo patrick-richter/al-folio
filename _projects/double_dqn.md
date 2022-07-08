@@ -7,38 +7,10 @@ importance: 2
 category: Reinforcement Learning
 ---
 
-<div class="video-container"><iframe src="https://www.youtube.com/embed/0HuI1QLOCJM?autoplay=1&loop=1"></iframe></div>
 
-sadfklsadf
-
-<div class="video-container"><iframe src="https://www.youtube.com/embed/0HuI1QLOCJM?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1"></iframe></div>
-
-sdfsdf
-
-<div class="video-container"><iframe src="https://www.youtube.com/embed/0HuI1QLOCJM?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" allow="autoplay; encrypted-media"></iframe></div>
-
-sdfsdf
-
-<iframe src="https://www.youtube.com/embed/0HuI1QLOCJM?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" allow="autoplay; encrypted-media"></iframe>
-
-Hallo djfkdsflsd
-
-<iframe width="420" height="315"
-src="https://www.youtube.com/embed/0HuI1QLOCJM?autoplay=1&loop=1">
-</iframe>
-
-skdölfdskjf
-
-<iframe width="420" height="315" src="https://www.youtube.com/embed/0HuI1QLOCJM?autoplay=1&loop=1" frameborder="0" allowfullscreen></iframe>
-
-sdfsdf
-
-<iframe src="https://www.youtube.com/embed/0HuI1QLOCJM?autoplay=1&loop=1" frameborder="0" allowfullscreen></iframe>
-
-sdfsdf
+<div class="video-container"><iframe src="https://www.youtube.com/embed/0HuI1QLOCJM?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&loop=1" frameborder="0" allow="autoplay; encrypted-media"></iframe></div>
 
 
-<iframe width="560" height="315" src="http://www.youtube.com/embed/0HuI1QLOCJM?autoplay=1&loop=1&playlist=GRonxog5mbw" frameborder="0" allowfullscreen></iframe>
 
 ### **Dataset**
 
