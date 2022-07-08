@@ -25,5 +25,67 @@ The environment is considered **’solved’** when the episode score **reaches 
     <iframe src="https://www.youtube.com/embed/0HuI1QLOCJM?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&loop=1" frameborder="0" allow="autoplay; encrypted-media"></iframe>
 </div>
 <br/><br/>
-### **Dataset**
+### **Prerequirements**
 
+The project is written in **Python** and, before starting, make sure to install and import the following **libraries**.
+
+<script src="https://gist.github.com/patrick-richter/b54284cb307ceb73ce16432b919831eb.js"></script>
+
+<br/><br/>
+### **Double DQN Agent**
+
+<script src="https://gist.github.com/patrick-richter/5822d2a212c22477be51c5ae156c5079.js"></script>
+
+<br/><br/>
+### **Hyperparameters**
+
+<script src="https://gist.github.com/patrick-richter/fb964f44288652ccb58ecbb0e7f6b744.js"></script>
+
+<br/><br/>
+### **Agent Training**
+
+<script src="https://gist.github.com/patrick-richter/92f65b296cd9bb040602563f93321642.js"></script>
+
+```
+Model: "model_2"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_3 (InputLayer)         [(None, 8)]               0         
+_________________________________________________________________
+dense_6 (Dense)              (None, 128)               1152      
+_________________________________________________________________
+dense_7 (Dense)              (None, 128)               16512     
+_________________________________________________________________
+dense_8 (Dense)              (None, 4)                 516       
+=================================================================
+Total params: 18,180
+Trainable params: 18,180
+Non-trainable params: 0
+_________________________________________________________________
+Model: "model_3"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_4 (InputLayer)         [(None, 8)]               0         
+_________________________________________________________________
+dense_9 (Dense)              (None, 128)               1152      
+_________________________________________________________________
+dense_10 (Dense)             (None, 128)               16512     
+_________________________________________________________________
+dense_11 (Dense)             (None, 4)                 516       
+=================================================================
+Total params: 18,180
+Trainable params: 18,180
+Non-trainable params: 0
+_________________________________________________________________
+Episode 0 Reward -438.8 Average -438.8 Epsilon 0.99 Time 0.27 s
+Episode 1 Reward -143.39 Average -291.1 Epsilon 0.99 Time 0.25 s
+Episode 2 Reward -187.07 Average -256.42 Epsilon 0.99 Time 0.31 s
+
+...
+
+Episode 997 Reward 260.85 Average 277.23 Epsilon 0.1 Time 1.08 s
+Episode 998 Reward 281.21 Average 277.48 Epsilon 0.1 Time 1.18 s
+Episode 999 Reward 275.25 Average 277.95 Epsilon 0.1 Time 1.5 s
+```
