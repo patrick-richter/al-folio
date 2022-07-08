@@ -11,6 +11,14 @@ category: Reinforcement Learning
 
 sadfklsadf
 
+<div class="video-container"><iframe src="https://www.youtube.com/embed/0HuI1QLOCJM?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1"></iframe></div>
+
+sdfsdf
+
+<div class="video-container"><iframe src="https://www.youtube.com/embed/0HuI1QLOCJM?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" allow="autoplay; encrypted-media"></iframe></div>
+
+sdfsdf
+
 <iframe src="https://www.youtube.com/embed/0HuI1QLOCJM?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" allow="autoplay; encrypted-media"></iframe>
 
 Hallo djfkdsflsd
