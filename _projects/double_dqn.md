@@ -2,14 +2,14 @@
 layout: page
 title: 'Double DQN Applied to Lunar Lander'
 description: 
-img: assets/img/3.jpg
+img: assets/img/40.jpg
 importance: 2
 category: Reinforcement Learning
 ---
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="Movie" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/40.jpg" title="Movie" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <br/><br/>
