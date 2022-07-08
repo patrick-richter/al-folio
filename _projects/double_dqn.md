@@ -16,6 +16,10 @@ Hallo djfkdsflsd
 src="https://www.youtube.com/embed/0HuI1QLOCJM?autoplay=1&mute=1">
 </iframe>
 
+skdölfdskjf
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/0HuI1QLOCJM?autoplay=1&loop=1&playlist=GRonxog5mbw" frameborder="0" allowfullscreen></iframe>
+
 ### **Dataset**
 
 Today, we will have a look at the **AG's News Topic Classification Dataset**. The dataset includes **title and description** of news articles for **120,000 training samples** and **7,600 test samples**. Each of those is classified into of the categories **"World"**, **"Sports"**, **"Business"**, or **"Sci/Tech"** (see [here](https://github.com/mhjabreel/CharCnn_Keras/tree/master/data/ag_news_csv) for more information). Here you can see a random sample of the dataset:
