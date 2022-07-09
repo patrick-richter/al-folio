@@ -52,7 +52,6 @@ Below, you find the **pseudocode for Double DQN**, as well as the **implementati
 <div class="caption">
         Double DQN pseudocode  by <a href="https://arxiv.org/pdf/1511.06581.pdf">Wang et al. (2016)</a>
 </div>
-<br/><br/>
 <script src="https://gist.github.com/patrick-richter/5822d2a212c22477be51c5ae156c5079.js"></script>
 
 <br/><br/>
