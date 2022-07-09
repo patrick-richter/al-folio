@@ -52,16 +52,20 @@ Below, you find the **pseudocode for Double DQN**, as well as the **implementati
 <div class="caption">
     Pseudocode Double DQN by <a href="https://arxiv.org/pdf/1511.06581.pdf">Wang et al. (2016)</a>)
 </div>
-
+<br/><br/>
 <script src="https://gist.github.com/patrick-richter/5822d2a212c22477be51c5ae156c5079.js"></script>
 
 <br/><br/>
 ### **Hyperparameters**
 
+You can find the **hyperparameters** that worked best for me, underneath. The action policy, especially in the beginning, is quite random, encouraging a lot of exploration.
+
 <script src="https://gist.github.com/patrick-richter/fb964f44288652ccb58ecbb0e7f6b744.js"></script>
 
 <br/><br/>
 ### **Agent Training**
+
+Now that we have implemented the Double DQN agent, we can **run the training process**. As you can see in the convergence graph below, the model converges after roughly 400 episodes and is stable thereafter.
 
 <script src="https://gist.github.com/patrick-richter/92f65b296cd9bb040602563f93321642.js"></script>
 
@@ -119,6 +123,9 @@ Episode 999 Reward 272.7 Average 248.39 Epsilon 0.1 Time 1.5 s
 <div class="caption">
     Convergence graph
 </div>
+
+What is also quite interesting is when you visualise the agent's policy improvement.
+
 <br/><br/>
 <div class="video-container">
     <iframe src="https://www.youtube.com/embed/3Lggk1YQ61U?rel=0&amp;showinfo=0&amp;autoplay=1&loop=1" frameborder="0" allow="autoplay; encrypted-media"></iframe>
