@@ -50,7 +50,7 @@ Below, you find the **pseudocode for Double DQN**, as well as the **implementati
     </div>
 </div>
 <div class="caption">
-    Pseudocode Double DQN by <a href="https://arxiv.org/pdf/1511.06581.pdf">Wang et al. (2016)</a>)
+    Pseudocode Double DQN by <a href="https://arxiv.org/pdf/1511.06581.pdf">Wang et al. (2016)</a>
 </div>
 <br/><br/>
 <script src="https://gist.github.com/patrick-richter/5822d2a212c22477be51c5ae156c5079.js"></script>
@@ -124,8 +124,7 @@ Episode 999 Reward 272.7 Average 248.39 Epsilon 0.1 Time 1.5 s
     Convergence graph
 </div>
 
-What is also quite interesting is when you visualise the agent's policy improvement.
-
+What is also quite interesting is when you **visualise the agent's policy improvement**.
 <br/><br/>
 <div class="video-container">
     <iframe src="https://www.youtube.com/embed/3Lggk1YQ61U?rel=0&amp;showinfo=0&amp;autoplay=1&loop=1" frameborder="0" allow="autoplay; encrypted-media"></iframe>
