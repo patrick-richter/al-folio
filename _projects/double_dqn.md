@@ -65,7 +65,7 @@ You can find the **hyperparameters** that worked best for me, underneath. The ac
 <br/><br/>
 ### **Agent Training**
 
-Now that we have implemented the Double DQN agent, we can **run the training process**. As you can see in the convergence graph below, the model converges after roughly 400 episodes and is stable thereafter.
+Now that we have implemented the Double DQN agent, we can **run the training process**. As you can see in the convergence graph below, the model **converges after roughly 400 episodes** and is stable thereafter.
 
 <script src="https://gist.github.com/patrick-richter/92f65b296cd9bb040602563f93321642.js"></script>
 
