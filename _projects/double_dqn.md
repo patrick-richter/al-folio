@@ -22,7 +22,7 @@ This is a **deterministic environment** (the next state is solely determined by 
 The environment is considered **’solved’** when the episode score **reaches 200 points or more**. Roughly 100-140 points are awarded for safely arriving on the landing pad, 10 points for each leg being in contract with the ground (i.e. landing upright) and an additional ±100 points for a crash landing or arrival at rest respectively. To discourage long engine fires, the lander receives -0.3 points for each frame that the main/side engine is firing. This allows the agent to first learn how to stabilise its flight and then focus on perfecting the landing itself. With a random policy, as seen in the video below, the agent reaches a score of -180.
 <br/><br/>
 <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/0HuI1QLOCJM?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1&loop=1" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+    <iframe src="https://www.youtube.com/embed/0HuI1QLOCJM?rel=0&amp;showinfo=0&amp;autoplay=1&loop=1" frameborder="0" allow="autoplay; encrypted-media"></iframe>
 </div>
 <br/><br/>
 ### **Prerequirements**
