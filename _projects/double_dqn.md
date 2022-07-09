@@ -15,7 +15,7 @@ category: Reinforcement Learning
 <br/><br/>
 ### **Lunar Lander Environment**
 
-This project aims to train a **Double Deep Q-Learning (Double DQN)** agent to successfully land a **Lunar Lander**, run via the python library `Box2D` within Open-AI Gym.
+This project aims to train a **Double Deep Q-Learning Network (Double DQN)** agent to successfully land a **Lunar Lander**, run via the python library `Box2D` within Open-AI Gym.
 
 This is a **deterministic environment** (the next state is solely determined by the action taken, no uncertainty) which provides a fully observable mixed observation space. Each observation of the **environment’s state** consists of coordinates relative to origin, velocity components and whether each leg is grounded. There four actions available to the lander – fire one of three thrusters or do nothing.
 
@@ -33,6 +33,25 @@ The project is written in **Python** and, before starting, make sure to install 
 
 <br/><br/>
 ### **Double DQN Agent**
+
+Foundational Reinforcement Learning methods, such as Dynamic Programming, Monte Carlo and Temporal Difference Methods, rely on tabular constructs to train the agent to solve a particular environment. However, the environment at hand contains an observation space consisting of six continuous variables, of which five can range between positive and negative infinity, meaning a tabular Reinforcement Learning method would be ill-suited. The best method to overcome this is Deep Q-Learning which is the Deep Learning function approximator version of Q-Learning, a model-free tabular learning method. A **Deep Q-Learning Network (DQN)** is an algorithm constructed via **combining fundamental Reinforcement Learning techniques with deep neural networks**.
+   
+The main idea of Q-Learning is that each state-action-pair has a Q-value, the expected rewards for an action taken in a given state, based on which the optimal policy can be chosen. For DQNs, the Q-value cannot be determined exactly, but is approximated with a Deep Neural Network. Thus, **the table is replaced with a Deep Neural Network that can handle continuous state input**. Finding the best training algorithm for the Deep Neural Network, poses a great challenge. Consequently, multiple forms of DQN were proposed in recent years. Here, Double DQN was chosen, as it is relatively easy to understand and implement, but equally powerful.
+
+Double DQN, as most other DQN algorithms, train the model using **experience replay**, a technique where the model is trained each timestep using a random subsample of recent experiences. Those experiences are sampled from a replay buffer that contains state, action, reward, and next state for a given number of the most recent timesteps. 
+
+Instead of using one Neural Network, Double DQN **employs two different networks** – the **policy and the target network**. The policy network, as the name implies, is responsible for choosing the optimal policy and is updated every timestep. The target network approximates the Q-value for the next state that is needed for the update equation. However, and here comes the crux of Double DQN, the optimal action of the next state is not chosen by the target network, but the policy network. By assigning different roles while performing the weight updates, overestimation of the Q-value for a chosen action is avoided, making the model generally more robust.
+
+Below, you find the **pseudocode for Double DQN**, as well as the **implementation in Python** with comments.
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/42.jpg" title="Pseudocode Double DQN" class="img-fluid" %}
+    </div>
+</div>
+<div class="caption">
+    Pseudocode Double DQN by <a href="https://arxiv.org/pdf/1511.06581.pdf">Wang et al. (2016)</a>)
+</div>
 
 <script src="https://gist.github.com/patrick-richter/5822d2a212c22477be51c5ae156c5079.js"></script>
 
