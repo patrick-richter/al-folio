@@ -79,13 +79,24 @@ Total params: 18,180
 Trainable params: 18,180
 Non-trainable params: 0
 _________________________________________________________________
-Episode 0 Reward -438.8 Average -438.8 Epsilon 0.99 Time 0.27 s
-Episode 1 Reward -143.39 Average -291.1 Epsilon 0.99 Time 0.25 s
-Episode 2 Reward -187.07 Average -256.42 Epsilon 0.99 Time 0.31 s
+Episode 0 Reward -358.87 Average -358.87 Epsilon 0.99 Time 0.27 s
+Episode 1 Reward -282.10 Average -282.10 Epsilon 0.99 Time 0.25 s
+Episode 2 Reward -118.17 Average -227.46 Epsilon 0.99 Time 0.31 s
 
 ...
 
-Episode 997 Reward 260.85 Average 277.23 Epsilon 0.1 Time 1.08 s
-Episode 998 Reward 281.21 Average 277.48 Epsilon 0.1 Time 1.18 s
-Episode 999 Reward 275.25 Average 277.95 Epsilon 0.1 Time 1.5 s
+Episode 997 Reward 244.27 Average 249.01 Epsilon 0.1 Time 1.08 s
+Episode 998 Reward 217.02 Average 248.45 Epsilon 0.1 Time 1.18 s
+Episode 999 Reward 272.7 Average 248.39 Epsilon 0.1 Time 1.5 s
 ```
+
+<script src="https://gist.github.com/patrick-richter/5e3e074d871b10377dabf908582995d0.js"></script>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/41.jpg" title="Convergence" class="img-fluid" %}
+    </div>
+</div>
+<div class="caption">
+    Convergence graph
+</div>
