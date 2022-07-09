@@ -100,3 +100,7 @@ Episode 999 Reward 272.7 Average 248.39 Epsilon 0.1 Time 1.5 s
 <div class="caption">
     Convergence graph
 </div>
+<br/><br/>
+<div class="video-container">
+    <iframe src="https://www.youtube.com/embed/3Lggk1YQ61U?rel=0&amp;showinfo=0&amp;autoplay=1&loop=1" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+</div>
