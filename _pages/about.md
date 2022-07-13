@@ -19,5 +19,5 @@ Hi everyone, this is Patrick. When I first got in touch with Machine Learning du
 
 Whilst doing coursework or having a go at my own projects, I discovered that it is hard to find help online in improving your Machine Learning skills. Therefore, I launched this website where I showcase my growing collection of projects and comprehensively explain the underlying algorithms. Have a look at `Machine Learning Projects` to see a number of cool projects in the fields of **Classic Machine Learning**, **Deep Learning**, and **Reinforcement Learning**.
 
-Wabt to get in touch or any questions regarding the projects? Let’s get connected on [LinkedIn](https://www.linkedin.com/in/patrick-richter-24bb961a5/) or check out my [CV](https://patrick-richter.github.io/assets/pdf/cv.pdf).
+Are you interested in getting in touch or do you have questions regarding the projects? Let’s get connected on [LinkedIn](https://www.linkedin.com/in/patrick-richter-24bb961a5/) or check out my [CV](https://patrick-richter.github.io/assets/pdf/cv.pdf).
 
