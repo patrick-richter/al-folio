@@ -7,6 +7,8 @@ nav: true
 nav_order: 4
 ---
 
-#### **Bachelor's Thesis
+#### **Bachelor's Thesis**
 
-### **Master's Dissertation
+
+
+#### **Master's Dissertation**
