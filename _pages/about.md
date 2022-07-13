@@ -15,8 +15,11 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hi everyone, this is Patrick. After first getting in touch with Machine Learning during my Mechanical Engineering undergrad and while I was doing an internship in an AI-startup, I was so captivated that I knew this is the path I want to pursue in my career. So, I decided to come to the UK and get a Data Science Master's degree here.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Whilst doing coursework or having a go at my own projects, I discovered that it is quite hard to find websites that give you an in-depth explanation of how to use different Machine Learning algorithms and how they work in detail. Therefore, I launched this website where I showcase my growing collection of projects and try to comprehensively explain the underlying algorithms. 
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+
+
+
+
